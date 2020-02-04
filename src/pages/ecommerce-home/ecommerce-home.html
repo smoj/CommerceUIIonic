@@ -1,0 +1,124 @@
+<!--
+  Generated template for the EcommerceHome page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<!-- Header bar -->
+<ion-header class="app-header">
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button menuToggle>
+           <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title text-center>
+        <!-- <img src="assets/logo-app-header.png" alt=""> --> <!-- For Image -->
+        Libertronic <!-- For text -->
+      </ion-title>
+      <ion-buttons right>
+        <button ion-button>
+          <ion-icon name="cart"></ion-icon>
+          <ion-badge color="danger">3</ion-badge>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<!-- End Header bar -->
+
+<ion-content>
+  <!-- Slides Section. Refer to ecommerce-home.ts for functionality -->
+  <ion-slides #slides [pager]="false" [paginationType]="bullets" class="slider-one" (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <h6 class="home--mini-header" text-center>Men's shoes</h6>
+      <h3 text-center>Camper Borne High Top Sneaker</h3>
+      <img class="home-product-img" src="assets/fashion-300x200-2.jpg" alt="">
+      <h5 bold no-margin text-center>$349.99</h5>
+    </ion-slide>
+
+    <ion-slide>
+      <h6 class="home--mini-header" text-center>Women's Pick</h6>
+      <h3 text-center>Camisol Top with rainbow pattern</h3>
+      <img class="home-product-img" src="assets/fashion-300x200-4.jpg" alt="">
+      <h5 bold no-margin text-center>$349.99</h5>
+    </ion-slide>
+
+    <ion-slide>
+      <h6 class="home--mini-header" text-center>Children Only</h6>
+      <h3 text-center>Kiddy sweaters with wool fabric</h3>
+      <img class="home-product-img" src="assets/fashion-300x200-3.jpg" alt="">
+      <h5 bold no-margin text-center>$349.99</h5>
+    </ion-slide>
+  </ion-slides>
+  <!-- End Slides section -->
+
+  <!--
+  Ion Grid with specific styling for two per row.
+  You can repeat the ion-col and it'll wrap.
+  Refer to src/theme/app.components.scss
+-->
+  <ion-grid class="app-item-grid--two-per-row">
+    <ion-row>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <h6 class="home--mini-header" text-center>Men's belt</h6>
+          <img src="assets/other-200x200-1.jpg" alt="">
+          <h5>DoubleJu Jacket</h5>
+          <h6 no-margin class="item-number">$32.99</h6>
+        </div>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <h6 class="home--mini-header" text-center>Handmade</h6>
+          <img src="assets/other-200x200-2.jpg" alt="">
+          <h5>Shirts</h5>
+          <h6 no-margin class="item-number">$66.99</h6>
+        </div>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <h6 class="home--mini-header" text-center>Handmade</h6>
+          <img src="assets/other-200x200-3.jpg" alt="">
+          <h5>Shirts</h5>
+          <h6 no-margin class="item-number">$66.99</h6>
+        </div>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <h6 class="home--mini-header" text-center>Handmade</h6>
+          <img src="assets/other-200x200-4.jpg" alt="">
+          <h5>Shirts</h5>
+          <h6 no-margin class="item-number">$66.99</h6>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- End Ion-grid -->
+
+  <!-- Slides Section. Refer to ecommerce-home.ts for functionality -->
+  <ion-slides #slides [pager]="false" [paginationType]="bullets" class="slider-one" (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <h6 class="home--mini-header" text-center>Men's shoes</h6>
+      <h3 text-center>Camper Borne High Top Sneaker</h3>
+      <img class="home-product-img" src="assets/fashion-300x200-4.jpg" alt="">
+      <h5 bold no-margin text-center>$349.99</h5>
+    </ion-slide>
+
+    <ion-slide>
+      <h6 class="home--mini-header" text-center>Women's Pick</h6>
+      <h3 text-center>Camisol Top with rainbow pattern</h3>
+      <img class="home-product-img" src="assets/fashion-300x200-1.jpg" alt="">
+      <h5 bold no-margin text-center>$349.99</h5>
+    </ion-slide>
+
+    <ion-slide>
+      <h6 class="home--mini-header" text-center>Children Only</h6>
+      <h3 text-center>Kiddy sweaters with wool fabric</h3>
+      <img class="home-product-img" src="assets/fashion-300x200-3.jpg" alt="">
+      <h5 bold no-margin text-center>$349.99</h5>
+    </ion-slide>
+  </ion-slides>
+  <!-- End Slides -->
+  <div padding></div>
+</ion-content>

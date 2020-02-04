@@ -1,0 +1,32 @@
+page-ecommerce-product-tab-reviews {
+  ion-content .fixed-content, ion-content .scroll-content {
+
+  }
+  .product-rating {
+    font-size: 3rem;
+  }
+  .review-summary{
+    background: transparentize(color($colors, dark), 0.95);
+    display: block;
+  }
+  .product-reviews {
+    padding: 8px 20px;
+    border-bottom: 1px solid #ccc;
+    .reviewer {
+
+    }
+    p {
+      color: lighten(color($colors, dark), 20%);
+      @include breakpoint($iphone6){
+        font-size: 1.5rem;
+      }
+    }
+    h6 {
+      font-size: 90%;
+      color : color($colors, primary);
+    }
+    ion-icon {
+      color: #f39c12;
+    }
+  }
+}

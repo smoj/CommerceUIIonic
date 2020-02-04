@@ -1,0 +1,83 @@
+page-slider-one {
+  ion-content {
+    // General Animation for full screen background. We're targeting how
+    // the screen should change color via the html markup
+    // <ion-content padding class="primary-font slide-{{slideIndex}}">
+    // See slider-one.ts for more info on {{slideIndex}}
+    // transition: background-color 900ms ease-in-out;
+
+    // Slide One styling. To add more styles, cimply copy this section,
+    // slide-0 to slide-(whatever number), and change colors to your preference.
+    // -webkit-transition: background-color 1s ease-in-out;
+    // -o-transition : background-color 1s ease-in-out;
+    // -moz-transition : background-color 1s ease-in-out;
+    -webkit-transition: background-color 1s linear;
+    -moz-transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+    &.slide-0 {
+      //Background color of screen
+      background-color: white;
+      ion-slide.swiper-slide {
+        h1,h2,h3,h4,h5,h6,p {
+          transition: color 450ms ease-in-out;
+          // color of text (should best contrast background)
+          color: color($colors, dark);
+        }
+        // Color style of button
+        button[ion-button] {
+          transition: color 450ms ease-in-out;
+          transition: background-color 450ms ease-in-out;
+          background: color($colors, dark);
+          color: white;
+        }
+      }
+    }
+    // End slide-0 styling
+
+
+    &.slide-1 {
+      //Background color of screen
+      background-color: yellow;
+      ion-slide.swiper-slide {
+        h1,h2,h3,h4,h5,h6,p {
+          transition: color 450ms ease-in-out;
+          // color of text (should best contrast background)
+          color: #555;
+        }
+        // Color style of button
+        button[ion-button] {
+          transition: color 450ms ease-in-out;
+          transition: background-color 450ms ease-in-out;
+          background: grey;
+          color: white;
+        }
+      }
+    }
+
+    &.slide-2 {
+      //Background color of screen
+      background-color: color($colors, danger);
+      ion-slide.swiper-slide {
+        h1,h2,h3,h4,h5,h6,p {
+          transition: color 450ms ease-in-out;
+          // color of text (should best contrast background)
+          color: white;
+        }
+        // Color style of button
+        button[ion-button] {
+          transition: color 450ms ease-in-out;
+          transition: background-color 450ms ease-in-out;
+          background: white;
+          color: #333;
+        }
+      }
+    }
+
+  }
+  ion-slide.swiper-slide {
+    align-items: flex-start;
+    .rnd-sqr-img {
+      border-radius: 30px;
+    }
+  }
+}

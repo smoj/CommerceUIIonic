@@ -1,0 +1,176 @@
+<!--
+  Generated template for the EcommerceProductOne page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- Header bar -->
+<ion-header class="app-header with-bottom-border">
+    <ion-navbar>
+      <ion-title>
+        Product Page
+      </ion-title>
+      <ion-buttons right>
+        <button ion-button>
+          <ion-icon name="cart"></ion-icon>
+          <ion-badge color="danger">3</ion-badge>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<!-- End Header bar -->
+
+
+<ion-content>
+
+  <div class="product-details">
+    <ion-list no-lines>
+      <ion-item>
+        <div item-left>
+          <h2 bold>Withings Home Camera</h2>
+          <h6><span class="price bold">$459</span></h6>
+        </div>
+        <ion-thumbnail item-right>
+          <img src="assets/user-1.jpg">
+        </ion-thumbnail>
+      </ion-item>
+    </ion-list>
+
+    <!-- Slides Section. Refer to ecommerce-product-one.ts for functionality -->
+    <ion-slides #slides [pager] ="true" [paginationType]="bullets" class="slider-one" (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+        <div>
+          <img class="rnd-sqr-img" src="assets/other-500x500-1.jpg" alt="">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <img class="rnd-sqr-img" src="assets/other-500x500-2.jpg" alt="">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <img class="rnd-sqr-img" src="assets/other-500x500-3.jpg" alt="">
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <!-- End Slides -->
+
+    <!-- Optional Selections for the product (think sizes, lenght, etc) -->
+    <div padding text-center>
+      <button ion-button outline class="select-option">8.6</button>
+      <button ion-button outline class="select-option">0.5</button>
+      <button ion-button outline class="select-option">3</button>
+      <button ion-button outline class="select-option">7</button>
+      <button ion-button outline class="select-option">4</button>
+    </div>
+    <!-- End Options -->
+
+    <div text-center>
+      <button ion-button color="primary" round >
+        <ion-icon name="cart"></ion-icon> Add to Cart
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Product Reviews -->
+  <h2 bold class="sub-title">Product Details</h2>
+  <!-- Ion-grid. Refer to src/theme/app.components.scss for class styling -->
+  <ion-grid class="ion-table">
+    <ion-row>
+      <ion-col col-4 bold>Gender</ion-col>
+      <ion-col col-8>Male</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4 bold>Season</ion-col>
+      <ion-col col-8>Spring, Autumn, Winter</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4 bold>Style</ion-col>
+      <ion-col col-8>Casual</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4 bold>Material</ion-col>
+      <ion-col col-8>Nuback Lether</ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- End Grid -->
+
+  <!-- reviews. Refer to ecommerce-product-one.scss for styles -->
+  <h2 no-margin bold class="sub-title">Reviews</h2>
+  <div class="product-reviews" padding>
+    <h6 class="reviewer">Michael Power</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+      tempora asperiores. Illo nisi tempore architecto inventore unde
+      impedit, optio, dolores magnam rerum suscipit porro! Harum fuga,
+      laudantium reiciendis aspernatur laborum.
+    </p>
+    <h6 class="uppercase">26 Sept 2017
+      <span class="pull-right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </span>
+    </h6>
+  </div>
+
+  <div class="product-reviews" padding>
+    <h6 class="reviewer">Michael Power</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+      tempora asperiores. Illo nisi tempore architecto inventore unde
+      impedit, optio, dolores magnam rerum suscipit porro! Harum fuga,
+      laudantium reiciendis aspernatur laborum.
+    </p>
+    <h6 class="uppercase">26 Sept 2017
+      <span class="pull-right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </span>
+    </h6>
+  </div>
+
+  <div class="product-reviews" padding>
+    <h6 class="reviewer">Michael Power</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+      tempora asperiores. Illo nisi tempore architecto inventore unde
+      impedit, optio, dolores magnam rerum suscipit porro! Harum fuga,
+      laudantium reiciendis aspernatur laborum.
+    </p>
+    <h6 class="uppercase">26 Sept 2017
+      <span class="pull-right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </span>
+    </h6>
+  </div>
+
+  <div class="product-reviews" padding>
+    <h6 class="reviewer">Michael Power</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+      tempora asperiores. Illo nisi tempore architecto inventore unde
+      impedit, optio, dolores magnam rerum suscipit porro! Harum fuga,
+      laudantium reiciendis aspernatur laborum.
+    </p>
+    <h6 class="uppercase">26 Sept 2017
+      <span class="pull-right">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </span>
+    </h6>
+  </div>
+</ion-content>

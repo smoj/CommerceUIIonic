@@ -1,0 +1,143 @@
+<!--
+  Generated template for the EcommerceCart page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="app-header with-bottom-border">
+    <ion-navbar>
+      <ion-title>
+        Ecommerce Cart
+      </ion-title>
+      <ion-buttons right>
+        <button ion-button>
+          <ion-icon name="cart"></ion-icon>
+          <ion-badge color="danger">3</ion-badge>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="primary-font">
+
+  <!-- Steps. Adding 'active' class to the button
+  will give the needed active style. Refer to src/theme/app.components.scss -->
+  <ion-grid class="app-steps">
+    <ion-row>
+      <ion-col text-center>
+        <h6 no-margin bold>My Cart</h6>
+        <button class="circle-step active">
+          <ion-icon name="cart"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <h6 no-margin>Shipping</h6>
+        <button class="circle-step">
+          <ion-icon name="home"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <h6 no-margin>Payment</h6>
+        <button class="circle-step">
+          <ion-icon name="logo-usd"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <h6 no-margin>My Cart</h6>
+        <button class="circle-step">
+          <ion-icon name="pricetags"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3 class="bold" padding>Your Items <span class="pull-right">3 Items</span></h3>
+
+  <!-- Sliding cart -->
+  <ion-list class="app-cart">
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/other-200x200-1.jpg">
+        </ion-thumbnail>
+        <h2>Withings Home Camera</h2>
+        <p><span class="price bold">$459</span> <small>wood</small></p>
+        <button ion-button color="primary" outline item-right>
+          x2
+        </button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/other-200x200-2.jpg">
+        </ion-thumbnail>
+        <h2>Withings Home Camera</h2>
+        <p><span class="price bold">$459</span> <small>wood</small></p>
+        <button ion-button color="primary" outline item-right>
+          x2
+        </button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/other-200x200-3.jpg">
+        </ion-thumbnail>
+        <h2>Withings Home Camera</h2>
+        <p><span class="price bold">$459</span> <small>wood</small></p>
+        <button ion-button color="primary" outline item-right>
+          x2
+        </button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+  <!-- End Sliding cart -->
+
+  <!-- Coupon -->
+  <div padding class="coupon">
+    <div padding class="app-form">
+      <ion-list no-margin>
+        <ion-item>
+          <ion-input type="text" placeholder="coupon"></ion-input>
+          <button item-right round ion-button class="bold">Apply</button>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+  <!-- Coupon -->
+
+  <!-- Total/Sub Total Cost -->
+  <ion-list class="app-cart">
+    <ion-item>
+      Your Sale :
+      <div item-right bold class="price-primary-color">$30,888</div>
+    </ion-item>
+    <ion-item>
+      Subtotal Price :
+      <div item-right bold class="price-primary-color">$90,888</div>
+    </ion-item>
+  </ion-list>
+  <div text-center padding>
+    <button ion-button color="primary" round>Buy Now</button>
+  </div>
+</ion-content>

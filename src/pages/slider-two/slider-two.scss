@@ -1,0 +1,32 @@
+page-slider-two {
+  ion-content {
+    background: white;
+  }
+  .title-and-content {
+    padding: 32px 16px;
+  }
+  .description {
+    margin-left : 20px;
+    margin-right : 20px;
+    display: block;
+  }
+  .swiper-container {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  ion-slides {
+      height: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      @include breakpoint($iphone6) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+  		}
+  }
+  ion-slide.swiper-slide {
+    align-items: flex-start;
+    .rnd-sqr-img {
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+page-ecommerce-home {
+  .header-logo {
+    height: 100%;
+  }
+  ion-slides {
+    height: auto;
+    h5 {
+      @include breakpoint($iphone6){
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .app-item-grid--two-per-row {
+    border-top: 1px solid #ccc;
+    margin: 16px 0;
+    .item-product {
+      .home--mini-header {
+        font-size: 90%;
+        @include breakpoint($iphone6){
+          font-size: 100%;
+        }
+      }
+      padding: 0 20px 16px 20px;
+      img {
+        width: 100%;
+      }
+      .item-number {
+        // color: color($colors, apptext, contrast);
+      }
+    }
+  }
+  .home--mini-header {
+    color: color($colors, primary);
+    @extend .uppercase;
+    font-size: 70%;
+    @include breakpoint($iphone6){
+      font-size: 80%;
+    }
+  }
+  .home-product-img {
+    width: 100%;
+    margin: 16px 0;
+  }
+}

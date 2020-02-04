@@ -1,0 +1,31 @@
+page-ecommerce-cart-payment {
+  .app-steps {
+    margin: 16px 0;
+  }
+  .app-form {
+    &:first-of-type {
+      padding-top: 16px;
+    }
+    .item-has-grid {
+      ion-list {
+        margin-bottom: 0;
+      }
+      ion-grid {
+        padding: 0;
+      }
+      ion-label {
+        margin: 0;
+      }
+      ion-item, ion-col {
+        padding: 0;
+        // .item-inner:last-of-type {
+        // }
+      }
+      ion-col:last-of-type {
+        .item-inner {
+            padding-right: 0;
+        }
+      }
+    }
+  }
+}

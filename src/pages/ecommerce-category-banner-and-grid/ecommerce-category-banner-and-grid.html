@@ -1,0 +1,69 @@
+<!--
+  Generated template for the EcommerceCategoryBannerAndGrid page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="app-header when-transparent">
+    <ion-navbar>
+      <ion-title>
+        Category Detail
+      </ion-title>
+      <ion-buttons right>
+        <button ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="fullscreen primary-font">
+
+  <div class="category-detail">
+    <div class="catergory-details" padding-double>
+      <div class="breakpoint-sizer">
+        <h3 bold>Run without Limits</h3>
+        <p>Our new winter collection now available in stores near you</p>
+      </div>
+      <button ion-button color="primary" round>View all</button>
+    </div>
+    <!-- Square Images only! -->
+    <img class="catergory-image" src="assets/other-200x200-6.jpg" alt="">
+  </div>
+
+  <!-- ion-grid for two items in any horizontal row, accounting for borders
+  Refer to src/theme/app.components.scss -->
+  <ion-grid class="app-item-grid--two-per-row">
+    <ion-row>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <img src="assets/other-200x200-1.jpg" alt="">
+          <h5>DoubleJu Jacket</h5>
+          <h6 no-margin class="item-number">$32.99</h6>
+        </div>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <img src="assets/other-200x200-2.jpg" alt="">
+          <h5>Shirts</h5>
+          <h6 no-margin class="item-number">$66.99</h6>
+        </div>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <img src="assets/other-200x200-3.jpg" alt="">
+          <h5>Shirts</h5>
+          <h6 no-margin class="item-number">$66.99</h6>
+        </div>
+      </ion-col>
+      <ion-col col-6 text-center>
+        <div class="item-product">
+          <img src="assets/other-200x200-4.jpg" alt="">
+          <h5>Shirts</h5>
+          <h6 no-margin class="item-number">$66.99</h6>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,33 @@
+page-ecommerce-search-filter {
+  .search-criteria {
+    color: color($colors, dark);
+  }
+  .search-section {
+    // border-top: 1px solid transparentize(color($colors, dark), 0.8);
+    border-bottom: 1px solid transparentize(color($colors, dark), 0.8);
+    &:first-of-type {
+      border-top: none;
+      margin-top: 0;
+    }
+    // &:last-of-type{
+    //   border-bottom: none;
+    // }
+    margin: 0;
+    padding: 16px;
+  }
+  .price-range-label {
+    border: 1px solid transparentize(color($colors, dark), 0.8);
+    background: transparentize(color($colors, dark), 0.99);
+    border-radius: 300px;
+    padding: 10px 15px;
+  }
+  ion-list {
+    margin-bottom: 0 !important;
+    margin-top: 16px !important;
+  }
+  .app-form {
+    ion-list > ion-item {
+      padding-left : 0;
+    }
+  }
+}

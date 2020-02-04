@@ -1,0 +1,172 @@
+<!--
+  Generated template for the Sidemenus page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="app-header">
+
+  <ion-navbar>
+    <!-- <ion-title>Sidemenus</ion-title> -->
+  </ion-navbar>
+
+</ion-header>
+
+<!-- ### MENU ONE ### -->
+<ion-menu class="primary-font" side="left" [content]="content" id="profile-sidemenu-one">
+  <ion-header class="app-header">
+    <ion-navbar>
+
+      <ion-buttons left>
+        <button ion-button clear>
+          <ion-icon name="cog"></ion-icon>
+        </button>
+      </ion-buttons>
+
+      <ion-title></ion-title>
+
+      <ion-buttons right>
+        <button ion-button clear>
+          <ion-icon name="star"></ion-icon>
+        </button>
+      </ion-buttons>
+
+    </ion-navbar>
+  </ion-header>
+
+  <profile-sidemenu-one>
+
+    <div class="app-profile-details" padding text-center>
+      <div class="pic">
+        <img src="assets/profile-pic.jpg" alt="">
+        <ion-badge>.</ion-badge>
+      </div>
+      <h3 class="bold">Estella Murphy</h3>
+      <h6 class="handle">@estellamurphy</h6>
+    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <h3 no-margin text-center>6,3k</h3>
+          <h6 text-center class="app-profile-stats">followers</h6>
+        </ion-col>
+        <ion-col col-4>
+          <h3 no-margin text-center>572</h3>
+          <h6 text-center class="app-profile-stats">posts</h6>
+        </ion-col>
+        <ion-col col-4>
+          <h3 no-margin text-center>2,3k</h3>
+          <h6 text-center class="app-profile-stats">following</h6>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="app-search" padding>
+      <ion-icon name="search"></ion-icon>
+      <ion-input type="text"></ion-input>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-icon name="leaf" item-left></ion-icon>
+        Activity
+        <ion-badge item-right color="danger">3</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        Friends
+      </ion-item>
+      <ion-item>
+        <ion-icon name="chatboxes" item-left></ion-icon>
+        Messages
+        <ion-badge item-right color="danger">1</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="albums" item-left></ion-icon>
+        Albums
+      </ion-item>
+      <ion-item>
+        <ion-icon name="star" item-left></ion-icon>
+        Favourites
+      </ion-item>
+    </ion-list>
+  </profile-sidemenu-one>
+
+</ion-menu>
+<!-- ### END MENU ONE ### -->
+
+<!-- ### MENU TWO ### -->
+<ion-menu class="primary-font" side="left" [content]="content" id="profile-sidemenu-two">
+  <profile-sidemenu-two>
+
+      <ion-grid padding class="app-profile-details">
+        <ion-row>
+          <ion-col col-3>
+            <img class="profile-pic" src="assets/profile-pic.jpg" alt="">
+          </ion-col>
+          <ion-col col-9>
+            <div class="pic-name-and-handle">
+              <h5 class="bold" no-margin>Estella Murphy</h5>
+              <h6 class="handle" no-margin>@estellamurphy</h6>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-list>
+        <ion-item>
+          <ion-icon name="leaf" item-left></ion-icon>
+          Activity
+          <ion-badge item-right color="danger">3</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person" item-left></ion-icon>
+          Friends
+        </ion-item>
+        <ion-item>
+          <ion-icon name="chatboxes" item-left></ion-icon>
+          Messages
+          <ion-badge item-right color="danger">1</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="albums" item-left></ion-icon>
+          Albums
+        </ion-item>
+        <ion-item>
+          <ion-icon name="star" item-left></ion-icon>
+          Favourites
+        </ion-item>
+      </ion-list>
+  </profile-sidemenu-two>
+  <ion-footer class="profile-sidemenu-two">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-left>
+          <button ion-button clear color="light">
+            <ion-icon name="power" padding></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button clear color="light">
+            <ion-icon name="cog" padding></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+</ion-menu>
+<!-- ### MENU TWO ### -->
+
+<ion-content #content padding class="primary-font">
+  <div text-center padding-double>
+    <ion-icon name="menu" class="showcase-icon"></ion-icon>
+    <h1>Perfect Menus for your everyday Apps</h1>
+    <p>Tap the buttons to show each side menu</p>
+    <div padding>
+      <button ion-button color="primary" round (click)="openMenuOne()">Select Menu One</button>
+      <button ion-button color="secondary" round (click)="openMenuTwo()">Select Menu Two</button>
+    </div>
+  </div>
+</ion-content>

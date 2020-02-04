@@ -1,0 +1,36 @@
+page-login-two {
+  button ion-icon {
+    padding-right: 8px;
+  }
+  .logo-and-tagline {
+    @include breakpoint($iphone5s) {
+      padding: 16px 0;
+    }
+    @include breakpoint($iphone6) {
+      padding: 32px 0;
+    }
+    @include breakpoint($iphone6Plus) {
+      padding: 32px 0;
+    }
+    .logo {
+      max-width: 140px;
+      max-height: 140px;
+    }
+  }
+  ion-content {
+    .scroll-content {
+      background: url('../assets/login-bg-dark.jpg') no-repeat center center/cover;
+      padding-top: 0;
+      margin-top: 0 !important;
+    }
+    .app-form {
+      padding: 16px 32px;
+      @include breakpoint($iphone6Plus) {
+        padding: 32px;
+      }
+    }
+    * {
+      color : white;
+    }
+  }
+}

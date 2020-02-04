@@ -1,0 +1,111 @@
+<!--
+  Generated template for the EcommerceCartPayment page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="app-header with-bottom-border">
+    <ion-navbar>
+
+      <ion-title>
+        Payment Method
+      </ion-title>
+      <ion-buttons right>
+        <button ion-button>
+          <ion-icon name="cart"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <!-- Steps. Adding '.active' class to the button
+  will give the needed active style. You can use '.done' to dim previous states
+  Refer to src/theme/app.components.scss -->
+  <ion-grid class="app-steps">
+    <ion-row>
+      <ion-col text-center>
+        <h6 no-margin bold>My Cart</h6>
+        <button class="circle-step done">
+          <ion-icon name="cart"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <h6 no-margin>Shipping</h6>
+        <button class="circle-step done">
+          <ion-icon name="home"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <h6 no-margin>Payment</h6>
+        <button class="circle-step active">
+          <ion-icon name="logo-usd"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <h6 no-margin>My Cart</h6>
+        <button class="circle-step">
+          <ion-icon name="pricetags"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="app-form">
+    <ion-list>
+      <ion-item>
+        <ion-label>Select a payment method</ion-label>
+        <ion-select>
+          <ion-option>MasterCard</ion-option>
+          <ion-option>Paypal</ion-option>
+          <ion-option>Credit Card</ion-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-list>
+  </div>
+
+  <div class="app-form">
+    <ion-list>
+      <ion-item>
+        <ion-input type="text" placeholder="Name: ex Jonathan"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="type" placeholder="Card Number"></ion-input>
+      </ion-item>
+
+      <!--
+        Here the item has an ion-grid to accommodate 
+        for form ion-items side by side
+        Refer to src/theme/app.components.scss
+      -->
+      <ion-item class="item-has-grid">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-list>
+                <ion-item><ion-input type="text" placeholder="CCV"></ion-input></ion-item>
+              </ion-list>
+            </ion-col>
+            <ion-col>
+              <ion-list>
+                <ion-item>
+                  <ion-input type="text" placeholder="MM/DD"></ion-input>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+    </ion-list>
+
+
+  </div>
+
+  <div text-center>
+    <button ion-button color="primary" round>Next Step</button>
+  </div>
+</ion-content>
